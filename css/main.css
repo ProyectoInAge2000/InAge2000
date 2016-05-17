@@ -103,8 +103,6 @@ footer{
 }
 
 .features {
-	background-color: #EA7C37;
-	color: #FAFAFA;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
