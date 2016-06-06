@@ -1,0 +1,106 @@
+.header
+  background-color #212121
+  color white
+  height 64px
+  width 100%
+  z-index 10
+  display flex
+  flex-direction column
+        
+  &-mobile
+    display flex
+    justify-content space-between
+
+  &-title
+    color white
+    order 1
+    margin-left 1rem
+    padding 0
+    line-height 64px
+
+  &-btn-nav
+    display block
+    background-color #212121
+    order 2
+    border 0
+    border-radius .4em
+    color white
+    padding 0
+    margin .5em 1em
+    font-size 1.5rem
+
+  &-menu-navbar
+    background-color #212121
+    position relative
+    top 51px
+    display flex
+    justify-content center
+    
+  &-menu-list
+    list-style-type none
+    height 0
+    overflow hidden
+    transition height 0.3s ease
+    width 100%
+     
+    &--show
+      height 220px
+      background #212121
+      
+    &-item
+      a
+        text-decoration none
+        border-bottom 1px solid white
+        color white
+        text-transform uppercase
+        padding 1.5em
+        display block
+
+.devs
+  font-size 2em
+  padding 1em 0 0 0
+  text-align center
+  &-logo
+    img
+      width 100%
+
+@media (min-width: 520px)
+  .devs
+    text-align center
+    &-logo
+      img
+        width 454px
+
+@media (min-width: 720px)
+  .header
+    flex-direction row
+    justify-content space-between
+    height 76px
+    transition all .3s ease
+    font-size 1.2em
+    
+    &-title
+      margin-left 1.5rem
+      order 1
+      line-height 76px      
+
+    &-btn-nav
+      display none
+
+    &-menu-navbar
+      order 2
+      top 0
+      height 100%
+
+    &-menu-list
+      height 100%
+
+      &-item
+        display inline-block
+        
+  .devs
+    text-align center
+    &-logo
+      img
+        width 454px    
+        

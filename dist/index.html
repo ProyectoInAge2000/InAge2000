@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>InAge 2000</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<style></style>
+	
+</head>
+<body>
+	<header class="header">
+		<div class="header-mobile">
+			<h1 class="header-title">InAge 2000</h1>
+			<button id="btnMenu" class="header-btn-nav">
+				<i class="fa fa-bars"></i>  
+			</button>
+		</div>
+		<nav class="header-menu-navbar">
+			<ul id="navbarMenu" class="header-menu-list">
+				<li class="header-menu-list-item">
+					<a href="#">Home</a>
+				</li>
+				<li class="header-menu-list-item">
+					<a href="#">Descarga</a>
+				</li>
+				<li class="header-menu-list-item">
+					<a href="#">Información</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="devs">
+		<figure class="devs-logo">
+			<img src="img/logo.jpg" alt="">
+		</figure>
+	</div>
+	<div class="description">
+		<h2>Propuesta de un ambiente para el modelado de sociedades de agentes reactivos</h2>
+		<p>La herramienta InAge es un sistema integral que comprende un simulador con un espacio para la creación de mundos virtuales en donde se obserba en comportamiento de los agentes. <br> <br> Con este nuevo sistema se busca ofrecer un ambiente fácil de manipular en la creación de los mundos, la herramienta que se propone es básica y limitada en referencia a la que se puede encontrar en el mundo real.</p>
+	</div>
+	<div class="images">
+		<ul class="rslides">
+			<li><img src="./img/inage1.png" alt=""></li>
+			<li><img src="./img/inage2.png" alt=""></li>
+		</ul>
+	</div>
+	<div class="download">
+		<h2>Poderosas herramientas para que administres tus intereses</h2>
+		<a href="https://drive.google.com/file/d/0BwZ2A8ygc4xwZTd6SHlKb3dPODQ/view">Descargar Ahora</a>
+	</div>
+	<div class="features">
+		<div class="features-item">
+			<h3>Traducir</h3>
+			<p>Generación de código objeto del lenguaje Age2000 a ejecutable Lego NXT; La intención es, a partir de la interpretación del código objeto generado por el compilador Age2000, generar código objeto que puede ser ejecutado en un robot Lego Mindstorm NXT.</p>
+		</div>
+		<div class="features-item">
+			<h3>Multi-idioma</h3>
+			<p>Manejo de aplicación y lenguaje multi-idioma (inglés y español). La plataforma de la aplicación tiene la opción de estar en inglés o español, así como el compilador reconoce las instrucciones y conductas para los agentes en ambos idiomas.</p>
+		</div>
+		<div class="features-item">
+			<h3>Editar</h3>
+			<p>Esta poderosa herramienta te permite la edición de programas en el lenguaje Age2000. Es una herramienta que incorpora un compilador del lenguaje Age2000 que permite visualizar mensajes de advertencia y error</p>
+		</div>
+		<div class="features-item">
+			<h3>Simular</h3>
+			<p>Es una herramienta que facilita la construcción de mundos virtuales, que permite la simulación del comportamiento de los agentes. Es un mundo delimitado por una matriz bidimensional de celdas a la que se llama "Suelo". Cada celda puede contener objetos que tienen diversas propiedaes y pueden existir "paredes" delimitando el conjunto de celdas. Los agentes están confinados en el suelo y pueden moverse de celda a celda. Laherramienta InAge cuenta con una barra de herramientas de objetos que se pueden colocar sobre el suelo, los cuales son paredes, obstaculos, un foco, un termometro.</p>
+		</div>
+	</div>
+	<footer>
+		<p>Contacto</p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>
+	<script>!function e(n,r,o){function t(s,a){if(!r[s]){if(!n[s]){var u="function"==typeof require&&require;if(!a&&u)return u(s,!0);if(i)return i(s,!0);var l=new Error("Cannot find module '"+s+"'");throw l.code="MODULE_NOT_FOUND",l}var c=r[s]={exports:{}};n[s][0].call(c.exports,function(e){var r=n[s][1][e];return t(r?r:e)},c,c.exports,e,n,r,o)}return r[s].exports}for(var i="function"==typeof require&&require,s=0;s<o.length;s++)t(o[s]);return t}({1:[function(e,n,r){var o=function(e){var n=document.createElement("link");n.rel="stylesheet",n.href=e,document.head.appendChild(n)};n.exports=o},{}],2:[function(e,n,r){var o=function(){$navbarMenu.toggleClass("header-menu-list--show")};n.exports=o},{}],3:[function(e,n,r){$().ready(function(){var n=e("./lib/loadCSS.js"),r=(e("./lib/onClickMenu.js"),$("#btnMenu")),o=$("#navbarMenu");r.on("click",function(){o.toggleClass("header-menu-list--show")}),n("https://fonts.googleapis.com/css?family=Open+Sans"),n("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css");var t=$(".rslides");t.responsiveSlides({timeout:2200})})},{"./lib/loadCSS.js":1,"./lib/onClickMenu.js":2}]},{},[3]);</script>
+	
+</body>
+</html>
