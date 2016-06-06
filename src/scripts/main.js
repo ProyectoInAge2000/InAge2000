@@ -17,4 +17,10 @@ $().ready(function() {
 	$izq.click(function() {
 		$img1.toggleClass('hidden');
 	});
+
+	var slide = $(".rslides");
+
+	slide.responsiveSlides({
+		timeout: 2000
+	});
 });
