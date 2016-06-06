@@ -55,7 +55,22 @@
         text-transform uppercase
         padding 1.5em
         display block
-        
+
+.devs
+  font-size 2em
+  padding 1em 0 0 0
+  text-align center
+  &-logo
+    img
+      width 100%
+
+@media (min-width: 520px)
+  .devs
+    text-align center
+    &-logo
+      img
+        width 454px
+
 @media (min-width: 720px)
   .header
     flex-direction row
@@ -82,4 +97,10 @@
 
       &-item
         display inline-block
+        
+  .devs
+    text-align center
+    &-logo
+      img
+        width 454px    
         
