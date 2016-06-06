@@ -11,16 +11,9 @@ $().ready(function() {
    	loadCSS('https://fonts.googleapis.com/css?family=Open+Sans');
 	loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css');
 
-	var $img1 = $('.images').find('li');
-	var $izq = $('.flecha');
-
-	$izq.click(function() {
-		$img1.toggleClass('hidden');
-	});
-
 	var slide = $(".rslides");
 
 	slide.responsiveSlides({
-		timeout: 2000
+		timeout: 2200
 	});
 });
