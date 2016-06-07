@@ -78,7 +78,7 @@ gulp.task('images', function() {
 gulp.task('inline', function () {
 	gulp.src('./build/index.html')
 		.pipe(smoosher())
-		.pipe(gulp.dest('./dist'));
+		.pipe(gulp.dest('./'));
 });
 
 gulp.task('build', ['build:css', 'build:js', 'images', 'inline']);
